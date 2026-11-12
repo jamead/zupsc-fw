@@ -3,19 +3,12 @@
 -------------------------------------------------------------------------------
 -- File          : DAC_AD5781_intf.vhd
 -- Author        : Thomas Chiesa tchiesa@bnl.gov
--- Created       : 07/19/2020
 -------------------------------------------------------------------------------
 -- Description:
 -- This is the SPI controller for the AD5781 DAC. It accepts the 
--- DAC control bits for uni-polar and bi-polar control. Gains and offsets
--- can be applied. 
+-- DAC control bits for uni-polar and bi-polar control. 
 -------------------------------------------------------------------------------
--------------------------------------------------------------------------------
--- Modification history:
--- 07/19/2020: created.
--- 08/19/2020: Changed program to send Control Register and Setpoint every cycle
--- 09/16/2020: Fixed Issue with bin2sc register, last bit of control register was not shifting out
--------------------------------------------------------------------------------
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL; 
@@ -122,8 +115,10 @@ begin
                     elsif init_count = 1 then  --Software Control Register Clear RESET bit (internal reset)
                         shift_reg     <= x"400000"; 
                         present_state <= N_SYNC_ZERO;
-                    else                       --Set DAC registers for output control
+                    elsif init_count = 2 then                       --Set DAC registers for output control
                         present_state <= SEND_CTRL_REG; 
+                    else 
+                        present_state <= SEND_SETPOINT; 
                     end if; 
                 end if; 
 				
@@ -168,8 +163,8 @@ begin
                 if clk_count = SPI_CLK_DIV -1 then 
                     if bit_count = (BITS) then  
                     --if bit_count = BITS then 
-						if init_count = 2 then 
-                            init_count <= 2; 
+						if init_count = 3 then 
+                            init_count <= 3; 
                         else                           
                             init_count <= init_count +1; 
                         end if;
@@ -212,7 +207,7 @@ begin
 						present_state <= WAIT_SYNC_LOW; 
 					end if; 
                 else 
-                    n_sync <= '1';
+                    --n_sync <= '1';
                     clk_count <= clk_count +1; 
                 end if; 
                 
@@ -235,3 +230,4 @@ begin
     end if; 
 end process; 
 end architecture;
+
