@@ -3,123 +3,250 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="tb_moving_avg_10_signed_behav.wdb" id="1">
+      <db_ref path="top_tb_behav.wdb" id="1">
          <top_modules>
+            <top_module name="axi_vip_pkg" />
+            <top_module name="common" />
             <top_module name="glbl" />
-            <top_module name="tb_moving_avg_10_signed" />
+            <top_module name="pkg_pl_regs" />
+            <top_module name="psc_pkg" />
+            <top_module name="std" />
+            <top_module name="top_tb" />
+            <top_module name="xil_common_vip_pkg" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="715.475 ns"></ZoomStartTime>
-      <ZoomEndTime time="854.465 ns"></ZoomEndTime>
-      <Cursor1Time time="775.000 ns"></Cursor1Time>
+      <ZoomStartTime time="606,784.448502 ns"></ZoomStartTime>
+      <ZoomEndTime time="611,042.695468 ns"></ZoomEndTime>
+      <Cursor1Time time="608,185.000000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="188"></NameColumnWidth>
-      <ValueColumnWidth column_width="91"></ValueColumnWidth>
+      <NameColumnWidth column_width="275"></NameColumnWidth>
+      <ValueColumnWidth column_width="96"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="11" />
-   <wvobject type="logic" fp_name="/tb_moving_avg_10_signed/dut/clk">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
+   <WVObjectSize size="35" />
+   <wave_markers>
+      <marker label="" time="163205000000" />
+      <marker label="" time="783205000000" />
+      <marker label="" time="844505000000" />
+      <marker label="" time="1032705000000" />
+      <marker label="" time="156245000000" />
+      <marker label="" time="172725000000" />
+      <marker label="" time="171485000000" />
+      <marker label="" time="735345000000" />
+      <marker label="" time="608285000000" />
+   </wave_markers>
+   <wvobject type="array" fp_name="/top_tb/dut/read_dcct_adcs/dcct_params">
+      <obj_property name="ElementShortName">dcct_params</obj_property>
+      <obj_property name="ObjectShortName">dcct_params</obj_property>
+      <wvobject type="logic" fp_name="/top_tb/dut/read_dcct_adcs/dcct_params.numbits_sel">
+         <obj_property name="ElementShortName">.numbits_sel</obj_property>
+         <obj_property name="ObjectShortName">.numbits_sel</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/top_tb/dut/read_dcct_adcs/dcct_params.ps1">
+         <obj_property name="ElementShortName">.ps1</obj_property>
+         <obj_property name="ObjectShortName">.ps1</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="array" fp_name="/top_tb/dut/read_dcct_adcs/dcct_params.ps1.ave_mode">
+            <obj_property name="ElementShortName">.ave_mode[1:0]</obj_property>
+            <obj_property name="ObjectShortName">.ave_mode[1:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/top_tb/dut/read_dcct_adcs/dcct_params.ps1.dcct0_gain">
+            <obj_property name="ElementShortName">.dcct0_gain[23:0]</obj_property>
+            <obj_property name="ObjectShortName">.dcct0_gain[23:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/top_tb/dut/read_dcct_adcs/dcct_params.ps1.dcct0_offset">
+            <obj_property name="ElementShortName">.dcct0_offset[19:0]</obj_property>
+            <obj_property name="ObjectShortName">.dcct0_offset[19:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/top_tb/dut/read_dcct_adcs/dcct_params.ps1.dcct1_gain">
+            <obj_property name="ElementShortName">.dcct1_gain[23:0]</obj_property>
+            <obj_property name="ObjectShortName">.dcct1_gain[23:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/top_tb/dut/read_dcct_adcs/dcct_params.ps1.dcct1_offset">
+            <obj_property name="ElementShortName">.dcct1_offset[19:0]</obj_property>
+            <obj_property name="ObjectShortName">.dcct1_offset[19:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="array" fp_name="/top_tb/dut/read_dcct_adcs/dcct_params.ps2">
+         <obj_property name="ElementShortName">.ps2</obj_property>
+         <obj_property name="ObjectShortName">.ps2</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/top_tb/dut/read_dcct_adcs/dcct_params.ps3">
+         <obj_property name="ElementShortName">.ps3</obj_property>
+         <obj_property name="ObjectShortName">.ps3</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/top_tb/dut/read_dcct_adcs/dcct_params.ps4">
+         <obj_property name="ElementShortName">.ps4</obj_property>
+         <obj_property name="ObjectShortName">.ps4</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject type="logic" fp_name="/tb_moving_avg_10_signed/dut/reset">
+   <wvobject type="array" fp_name="/top_tb/dut/write_dacs/dac0/dig_loop/pid_cntrl">
+      <obj_property name="ElementShortName">pid_cntrl</obj_property>
+      <obj_property name="ObjectShortName">pid_cntrl</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/reset_n">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/dut/pl_clk0">
+      <obj_property name="ElementShortName">pl_clk0</obj_property>
+      <obj_property name="ObjectShortName">pl_clk0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/dut/acq_trig">
+      <obj_property name="ElementShortName">acq_trig</obj_property>
+      <obj_property name="ObjectShortName">acq_trig</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider65" type="divider">
+      <obj_property name="label">dcct adc input</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/dut/read_dcct_adcs/dcct_ch0/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/dut/read_dcct_adcs/dcct_ch0/start_lat">
+      <obj_property name="ElementShortName">start_lat</obj_property>
+      <obj_property name="ObjectShortName">start_lat</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/dut/read_dcct_adcs/dcct_ch0/sclk">
+      <obj_property name="ElementShortName">sclk</obj_property>
+      <obj_property name="ObjectShortName">sclk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/dut/read_dcct_adcs/dcct_ch0/cnv">
+      <obj_property name="ElementShortName">cnv</obj_property>
+      <obj_property name="ObjectShortName">cnv</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/dut/read_dcct_adcs/dcct_ch0/dcct0">
+      <obj_property name="ElementShortName">dcct0[19:0]</obj_property>
+      <obj_property name="ObjectShortName">dcct0[19:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/dut/write_dacs/dac0/dcct_adcs.dcct0">
+      <obj_property name="ElementShortName">.dcct0[19:0]</obj_property>
+      <obj_property name="ObjectShortName">.dcct0[19:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider114" type="divider">
+      <obj_property name="label">pid controller</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/dut/write_dacs/dac0/gainoff_done">
+      <obj_property name="ElementShortName">gainoff_done</obj_property>
+      <obj_property name="ObjectShortName">gainoff_done</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/dut/write_dacs/dac0/dig_loop/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/dut/write_dacs/dac0/dig_loop/feedback">
+      <obj_property name="ElementShortName">feedback[19:0]</obj_property>
+      <obj_property name="ObjectShortName">feedback[19:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/dut/write_dacs/dac0/dig_loop/setpoint">
+      <obj_property name="ElementShortName">setpoint[19:0]</obj_property>
+      <obj_property name="ObjectShortName">setpoint[19:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/dut/write_dacs/dac0/dig_loop/setpt_f">
+      <obj_property name="ElementShortName">setpt_f[31:0]</obj_property>
+      <obj_property name="ObjectShortName">setpt_f[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/dut/write_dacs/dac0/dig_loop/fdbk_f">
+      <obj_property name="ElementShortName">fdbk_f[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fdbk_f[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/dut/write_dacs/dac0/dig_loop/err_f">
+      <obj_property name="ElementShortName">err_f[31:0]</obj_property>
+      <obj_property name="ObjectShortName">err_f[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/dut/write_dacs/dac0/dig_loop/pterm_f">
+      <obj_property name="ElementShortName">pterm_f[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pterm_f[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/dut/write_dacs/dac0/dig_loop/iterm_f">
+      <obj_property name="ElementShortName">iterm_f[31:0]</obj_property>
+      <obj_property name="ObjectShortName">iterm_f[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/dut/write_dacs/dac0/dig_loop/pid_sum_f">
+      <obj_property name="ElementShortName">pid_sum_f[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pid_sum_f[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/dut/write_dacs/dac0/dig_loop/control_out">
+      <obj_property name="ElementShortName">control_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">control_out[19:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider139" type="divider">
+      <obj_property name="label">DAC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/dut/write_dacs/dac0/spi_dac/reset">
       <obj_property name="ElementShortName">reset</obj_property>
       <obj_property name="ObjectShortName">reset</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/tb_moving_avg_10_signed/dut/valid_in">
-      <obj_property name="ElementShortName">valid_in</obj_property>
-      <obj_property name="ObjectShortName">valid_in</obj_property>
+   <wvobject type="other" fp_name="/top_tb/dut/write_dacs/dac0/spi_dac/boot_delay_count">
+      <obj_property name="ElementShortName">boot_delay_count</obj_property>
+      <obj_property name="ObjectShortName">boot_delay_count</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/tb_moving_avg_10_signed/valid_out">
-      <obj_property name="ElementShortName">valid_out</obj_property>
-      <obj_property name="ObjectShortName">valid_out</obj_property>
+   <wvobject type="logic" fp_name="/top_tb/dut/write_dacs/dac0/spi_dac/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/tb_moving_avg_10_signed/dut/din">
-      <obj_property name="ElementShortName">din[19:0]</obj_property>
-      <obj_property name="ObjectShortName">din[19:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   <wvobject type="logic" fp_name="/top_tb/dut/write_dacs/dac0/gainoff_done">
+      <obj_property name="ElementShortName">gainoff_done</obj_property>
+      <obj_property name="ObjectShortName">gainoff_done</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/tb_moving_avg_10_signed/dut/samples">
-      <obj_property name="ElementShortName">samples[9:0][19:0]</obj_property>
-      <obj_property name="ObjectShortName">samples[9:0][19:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      <obj_property name="isExpanded"></obj_property>
-      <wvobject type="array" fp_name="/tb_moving_avg_10_signed/dut/samples[9]">
-         <obj_property name="ElementShortName">[9][19:0]</obj_property>
-         <obj_property name="ObjectShortName">[9][19:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject type="array" fp_name="/tb_moving_avg_10_signed/dut/samples[8]">
-         <obj_property name="ElementShortName">[8][19:0]</obj_property>
-         <obj_property name="ObjectShortName">[8][19:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject type="array" fp_name="/tb_moving_avg_10_signed/dut/samples[7]">
-         <obj_property name="ElementShortName">[7][19:0]</obj_property>
-         <obj_property name="ObjectShortName">[7][19:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject type="array" fp_name="/tb_moving_avg_10_signed/dut/samples[6]">
-         <obj_property name="ElementShortName">[6][19:0]</obj_property>
-         <obj_property name="ObjectShortName">[6][19:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject type="array" fp_name="/tb_moving_avg_10_signed/dut/samples[5]">
-         <obj_property name="ElementShortName">[5][19:0]</obj_property>
-         <obj_property name="ObjectShortName">[5][19:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject type="array" fp_name="/tb_moving_avg_10_signed/dut/samples[4]">
-         <obj_property name="ElementShortName">[4][19:0]</obj_property>
-         <obj_property name="ObjectShortName">[4][19:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject type="array" fp_name="/tb_moving_avg_10_signed/dut/samples[3]">
-         <obj_property name="ElementShortName">[3][19:0]</obj_property>
-         <obj_property name="ObjectShortName">[3][19:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject type="array" fp_name="/tb_moving_avg_10_signed/dut/samples[2]">
-         <obj_property name="ElementShortName">[2][19:0]</obj_property>
-         <obj_property name="ObjectShortName">[2][19:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject type="array" fp_name="/tb_moving_avg_10_signed/dut/samples[1]">
-         <obj_property name="ElementShortName">[1][19:0]</obj_property>
-         <obj_property name="ObjectShortName">[1][19:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject type="array" fp_name="/tb_moving_avg_10_signed/dut/samples[0]">
-         <obj_property name="ElementShortName">[0][19:0]</obj_property>
-         <obj_property name="ObjectShortName">[0][19:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
+   <wvobject type="other" fp_name="/top_tb/dut/write_dacs/dac0/spi_dac/present_state">
+      <obj_property name="ElementShortName">present_state</obj_property>
+      <obj_property name="ObjectShortName">present_state</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/tb_moving_avg_10_signed/dut/sum">
-      <obj_property name="ElementShortName">sum[23:0]</obj_property>
-      <obj_property name="ObjectShortName">sum[23:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   <wvobject type="array" fp_name="/top_tb/dut/write_dacs/dac0/spi_dac/dac_data">
+      <obj_property name="ElementShortName">dac_data[19:0]</obj_property>
+      <obj_property name="ObjectShortName">dac_data[19:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/tb_moving_avg_10_signed/dut/count">
-      <obj_property name="ElementShortName">count[3:0]</obj_property>
-      <obj_property name="ObjectShortName">count[3:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject type="array" fp_name="/top_tb/dut/write_dacs/dac0/spi_dac/shift_reg">
+      <obj_property name="ElementShortName">shift_reg[23:0]</obj_property>
+      <obj_property name="ObjectShortName">shift_reg[23:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/tb_moving_avg_10_signed/dut/sum0">
-      <obj_property name="ElementShortName">sum0[23:0]</obj_property>
-      <obj_property name="ObjectShortName">sum0[23:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   <wvobject type="logic" fp_name="/top_tb/dut/write_dacs/dac0/spi_dac/sclk">
+      <obj_property name="ElementShortName">sclk</obj_property>
+      <obj_property name="ObjectShortName">sclk</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/tb_moving_avg_10_signed/dut/prod1">
-      <obj_property name="ElementShortName">prod1[40:0]</obj_property>
-      <obj_property name="ObjectShortName">prod1[40:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   <wvobject type="logic" fp_name="/top_tb/dut/write_dacs/dac0/spi_dac/sdo">
+      <obj_property name="ElementShortName">sdo</obj_property>
+      <obj_property name="ObjectShortName">sdo</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/tb_moving_avg_10_signed/dut/avg_out">
-      <obj_property name="ElementShortName">avg_out[19:0]</obj_property>
-      <obj_property name="ObjectShortName">avg_out[19:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   <wvobject type="logic" fp_name="/top_tb/dut/write_dacs/dac0/spi_dac/n_sync">
+      <obj_property name="ElementShortName">n_sync</obj_property>
+      <obj_property name="ObjectShortName">n_sync</obj_property>
    </wvobject>
 </wave_config>

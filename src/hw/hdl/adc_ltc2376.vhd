@@ -39,8 +39,8 @@ end entity;
 architecture arch of adc_ltc2376 is
   
   type state_type is (IDLE,SET_CNV,WAIT_FOR_NOT_BUSY,SCLK_HI,SCLK_LO,DONE); 
-  constant CNV_PULSE : natural := 10; --2 clock counts, 40ns, datasheet specifies min of 20ns
-  constant CNV_WIDTH : natural := 51; --slightly more than 3us, max wait is 3us according to datasheet
+  constant CNV_PULSE : natural := 2; --2 clock counts, 40ns, datasheet specifies min of 20ns
+  constant CNV_WIDTH : natural := 76; --slightly more than 3us, max wait is 3us according to datasheet
 
   signal state       : state_type; 
   signal shift_reg0  : std_logic_vector(19 downto 0); 
@@ -171,7 +171,7 @@ clkdivide : process(clk, reset)
           clk_enb <= '0';
        else
           clk_cnt <= std_logic_vector(unsigned(clk_cnt) + 1);
-          if (clk_cnt = 8d"4") then  
+          if (clk_cnt = 8d"3") then  
              clk_cnt <= 8d"0";
 		 	 clk_enb <= '1';
 		  else 	 

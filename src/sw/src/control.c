@@ -746,14 +746,14 @@ void chan_settings(u32 chan, void *msg, u32 msglen) {
         	break;
 
         case KP_MSG:
-         	Xil_Out32(XPAR_M_AXI_BASEADDR + DPID_KP_REG + chan*CHBASEADDR, data.u);
+         	 Xil_Out32(XPAR_M_AXI_BASEADDR + DPID_KP_REG + chan*CHBASEADDR, data.u);
              vTaskDelay(pdMS_TO_TICKS(1));
              data.u = Xil_In32(XPAR_M_AXI_BASEADDR + DPID_KP_REG + chan*CHBASEADDR);
              printf("Kp = %8f\n",data.f);
              break;
 
          case KI_MSG:
-         	Xil_Out32(XPAR_M_AXI_BASEADDR + DPID_KI_REG + chan*CHBASEADDR, data.u);
+         	 Xil_Out32(XPAR_M_AXI_BASEADDR + DPID_KI_REG + chan*CHBASEADDR, data.u);
              vTaskDelay(pdMS_TO_TICKS(1));
              data.u = Xil_In32(XPAR_M_AXI_BASEADDR + DPID_KI_REG + chan*CHBASEADDR);
              printf("Ki = %8f\n",data.f);

@@ -226,7 +226,7 @@ dig_loop : entity work.pid_fp_controller
 port map(
     clk => clk, 
     rst => reset, 
-    start => gainoff_done, 
+    start => tenkhz_trig, --gainoff_done, 
     pid_cntrl => pid_cntrl,
 	pid_stat => pid_stat,   
     setpoint => dac_setpt_gainoff,

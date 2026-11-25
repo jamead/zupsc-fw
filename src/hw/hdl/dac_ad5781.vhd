@@ -24,7 +24,8 @@ use IEEE.NUMERIC_STD.ALL;
 entity dac_ad5781 is
 generic(
     SPI_CLK_DIV      : natural := 5;
-    BOOT_DELAY_CYCLES : natural := 10000000 -- 100 ms at 100 MHz after FPGA reset release
+    --BOOT_DELAY_CYCLES : natural := 10000000 -- 100 ms at 100 MHz after FPGA reset release
+    BOOT_DELAY_CYCLES : natural := 10000 -- 100 ms at 100 MHz after FPGA reset release
 ); 
 port(
         --Control inputs
